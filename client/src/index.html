@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles/tailwind.css">
+    <link rel="shortcut icon" href="../public/images/favicon.ico" type="image/x-icon">
+    <title>hansenDevelopement_</title>
+    <script>
+        function setTheme() {
+            var currentTheme = document.documentElement.getAttribute("data-theme");
+            var targetTheme = "aqua";
+
+            if (currentTheme === "aqua") {
+                targetTheme = "dark";
+            }
+
+            document.documentElement.setAttribute('data-theme', targetTheme)
+            localStorage.setItem('theme', targetTheme);
+        };
+    </script>
+</head>
+
+<body>
+    <header class="navbar bg-base-100 px-5" id="top">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <label tabindex="0" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="" class="btn-neutral btn-active text-base text-gray-200 m-3 p-3">HOME</a></li>
+                    <li><a href="" class="btn-neutral btn-active text-base text-gray-200 m-3 mx-3 p-3 ">ABOUT ME</a>
+                    </li>
+                    <li><a href="" class="btn-neutral btn-active text-base text-gray-200 m-3 mx-3 p-3 ">PROJECT
+                            LIBRARY</a></li>
+                    <li><a href="" class="btn-primary btn-active text-base text-gray-200 m-3 mx-3 p-3 ">PROJECT
+                            SHOWCASE</a></li>
+                    <li><a href="" class="btn-primary btn-active text-base text-gray-200 m-3 mx-3 p-3 ">SOCIAL</a></li>
+                    <li><a href="" class="btn-accent btn-active text-base text-gray-200 m-3 mx-3 p-3">CONTACT</a></li>
+                    <li><button class="btn btn-active" onclick="setTheme()">Theme</button></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost object-scale-down w-20 place-items-center mr-5">
+                <img src="../public/images/logo_black.png" class="filter invert" alt="">
+            </a>
+            <h2 class="font-bold text-xl">
+                hansen
+            </h2>
+            <h2 class="text-xl">
+                Developement_
+            </h2>
+        </div>
+        <div class="navbar-end hidden lg:flex flex-nowrap">
+            <ul class="menu menu-horizontal px-1 flex-nowrap">
+                <li><a href="" class="btn-neutral btn-active text-base text-gray-200 mx-3">HOME</a></li>
+                <li><a href="" class="btn-neutral btn-active text-base text-gray-200 mx-1 ">ABOUT ME</a></li>
+                <li><a href="" class="btn-neutral btn-active text-base text-gray-200 mx-3 ">PROJECT LIBRARY</a></li>
+                <li><a href="" class="btn-primary btn-active text-base text-gray-200 mx-1 ">PROJECT SHOWCASE</a></li>
+                <li><a href="" class="btn-primary btn-active text-base text-gray-200 mx-3 ">SOCIAL</a></li>
+                <li><a href="" class="btn-accent btn-active text-base text-gray-200 mx-1">CONTACT</a></li>
+                <li><a class="btn-active text-base font-bold ml-3" onclick="setTheme()">☾☼</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero" style="background-image: url(/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+            <div class="hero-overlay bg-opacity-70"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="w-7/12 text-cyan-50">
+                    <h1 class="text-3xl m-5"><code class="text-5xl font-bold">every challenge is welcome here_</code>
+                    </h1>
+                    <h1 class="text-2xl mb-5 italic font-light">"This is where machines meet curiosity."</h1>
+                    <h1 class="text-2xl mb-5">I'm Ivan Hansen, a full-stack developer currently specializing in Machine
+                        Learning and Artificial Intelligence.</h1>
+                    <a class="btn btn-primary" href="#whoami">Get Started</a>
+                    <a class="btn btn-accent" href="#contact_home">Contact</a>
+                </div>
+            </div>
+        </section>
+        <section class="grid w-full h-fit py-4 rounded bg-base-300 text-accent-content" id="whoami">
+            <code class="mx-8 mt-10 place-self-start text-4xl text-gray-300">
+                user@ivanhansen:$ id ivanhansen
+            </code>
+            <code class="mx-8 mb-5 place-self-start text-4xl font-bold text-accent">
+                user@ivanhansen:$ echo "Get to know who I am!"
+            </code>
+            <div class="h-fit w-full flex flex-row flex-wrap">
+                <div class="card w-3/12 bg-base-100 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">Hello! <strong>I'm Ivan Hansen</strong></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus vitae
+                            egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo sit amet massa
+                            ultricies maximus a in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et
+                            ultrices posuere cubilia curae; Duis vehicula, ex eget convallis iaculis, sapien justo
+                            lobortis felis, quis ultricies ante est vel erat. Quisque auctor, lectus fringilla
+                            condimentum luctus, orci felis consectetur turpis, sed rhoncus nisi urna a nulla. Ut quis
+                            porta mauris.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">My resume</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-3/12 bg-base-100 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">This is <strong>where I learned to code.</strong></h2>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>UDELAR - Facultad de Ingeniería</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Holberton School Uruguay</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>CoderHouse</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Self-learning</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-5/12 bg-base-100 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">This is <strong>my tech stack!</strong></h2>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Front-end development</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <div class="join">
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Back-end development</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <div class="join">
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Machine Learning / AI</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <div class="join">
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="collapse bg-gray-600">
+                            <input type="radio" name="my-accordion-1" />
+                            <div class="collapse-title text-xl font-medium">
+                                <strong>Other technologies</strong>
+                            </div>
+                            <div class="collapse-content">
+                                <div class="join">
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                    <button class="btn join-item tech-image m-3"><img src="../public/images/favicon.ico"
+                                            alt=""></button>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus
+                                    vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo
+                                    sit amet massa ultricies maximus a in ipsum. </p>
+                            </div>
+                        </div>
+                        <div class="card-actions justify-end">
+                            <h2 class="text-2xl">...but I'm eager to learn any other language or tech skill
+                                <strong>because I love challenges!</strong>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="flex flex-col w-full h-fit rounded bg-base-100 text-primary-content px-5">
+            <code class="mx-8 mt-10 place-self-start text-4xl text-gray-300">
+                user@ivanhansen:$ cd ./projects
+            </code>
+            <code class="mx-8 mb-5 place-self-start text-4xl font-bold text-accent">
+                user@ivanhansen:$ echo "See some of my projects!"
+            </code>
+            <div class="flex flex-row flex-wrap">
+                <div class="bg-gray-800 w-1/2 m-5 mockup-window border border-base-300 flex-auto glass">
+                    <div class="flex flex-col py-8 px-12 border-t border-base-300">
+                        <h1 class="mb-5 place-self-start text-3xl font-bold">
+                            Real-time digit recognition API.
+                        </h1>
+                        <div class="mockup-code my-5 p-5 place-self-start text-base">
+                            <code>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo sit amet massa ultricies maximus a in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis vehicula, ex eget convallis iaculis, sapien justo lobortis felis, quis ultricies ante est vel erat. Quisque auctor, lectus fringilla condimentum luctus, orci felis consectetur turpis, sed rhoncus nisi urna a nulla. Ut quis porta mauris. 
+                            </code>
+                        </div>
+                        <h1 class="">
+                        </h1>
+                        <div class="grid w-full h-64 rounded bg-base-100 text-accent-content place-content-center my-5">
+                            Preview
+                        </div>
+                        <div class="flex flex-row w-fit place-self-center m-0 p-0">
+                            <button class="btn btn-primary m-5 w-auto place-self-center">
+                                See more
+                            </button>
+                            <button class="btn btn-secondary m-5 w-auto place-self-center">
+                                GitHub project page
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-5/12 flex-auto h-fit mx-10">
+                    <div class="bg-gray-800 w-full my-5 mockup-window border border-base-300 flex-auto h-fit glass">
+                        <div class="flex flex-col py-8 px-12 border-t border-base-300">
+                            <h1 class="place-self-start text-xl">
+                                Currently working on...
+                            </h1>
+                            <h1 class="mb-5 place-self-start text-3xl font-bold">
+                                BattleCall: an AI powered gaming team builder.
+                            </h1>
+                            <div class="mockup-code my-5 p-5 place-self-start text-base">
+                                <code>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus vitae egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo sit amet massa ultricies maximus a in ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis vehicula, ex eget convallis iaculis, sapien justo lobortis felis, quis ultricies ante est vel erat. Quisque auctor, lectus fringilla condimentum luctus, orci felis consectetur turpis, sed rhoncus nisi urna a nulla. Ut quis porta mauris. 
+                                </code>
+                            </div>
+                            <div class="flex flex-row w-fit place-self-center m-0 p-0">
+                                <button class="btn btn-primary m-5 w-auto place-self-center">
+                                    See more
+                                </button>
+                                <button class="btn btn-disabled m-5 w-auto place-self-center">
+                                    GitHub project page
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-800 w-full my-5 mockup-window border border-base-300 flex-auto h-fit glass">
+                        <div class="flex flex-col py-8 px-12 border-t border-base-300">
+                            <h1 class="mb-5 place-self-start text-2xl font-bold">
+                                Wanna see more? Go to my <a class="btn btn-primary w-auto text-base font-bold">Project
+                                    Library</a>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="grid w-full h-fit py-4 rounded bg-base-300 text-accent-content" id="contact_home">
+            <code class="mx-8 mt-10 place-self-start text-4xl text-gray-300">
+                user@ivanhansen:$ talk ivan@ivanhansen
+            </code>
+            <code class="mx-8 mb-5 place-self-start text-4xl font-bold text-accent">
+                user@ivanhansen:$ echo "Let's get in contact!"
+            </code>
+            <div class="h-fit w-full flex flex-row flex-wrap">
+                <div class="card w-3/12 h-fit bg-base-200 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">My <strong>LinkedIn profile.</strong></h2>
+                        <a href="https://www.linkedin.com/in/ivan-hansen-kuzel-0503b91a1/">
+                            <img src="../public/images/liprofile.png" class="rounded-md my-5" alt="">
+                        </a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet blandit lectus vitae
+                            egestas. Praesent imperdiet nulla non nunc venenatis tempor. Donec ut justo sit amet massa
+                            ultricies maximus a in ipsum.</p>
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-3/12 bg-base-200 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">My <strong>GitHub page.</strong></h2>
+                        <h1 class="place-self-start text-xl my-3">
+                            Currently working on...
+                        </h1>
+                        <img
+                            src="https://github-readme-stats.vercel.app/api/pin/?username=Ihansen225&theme=dark&repo=holbertonschool-machine_learning" />
+                        <h1 class="place-self-start text-xl my-3">
+                            My Github stats
+                        </h1>
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ihansen225&theme=dark&hide_border=false"
+                            alt="">
+                        <img src="https://github-readme-stats.vercel.app/api?username=Ihansen225&theme=dark&hide_border=false&include_all_commits=false&count_private=false"
+                            alt="">
+                        <div class="card-actions justify-end">
+                            <button class="btn btn-primary">Learn more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-5/12 bg-base-200 m-5 py-5 flex-auto">
+                    <div class="card-body">
+                        <h2 class="text-3xl">Other ways <strong>to reach me!</strong></h2>
+                        <div class="pt-8 max-w-screen-md">
+                            <p class="mb-4 text-lg">Feel free to leave a message here and I'll get in touch as soon as I
+                                can!
+                            </p>
+                            <form action="#" class="space-y-8">
+                                <div>
+                                    <label for="email" class="block mb-2 text-lg">Your email</label>
+                                    <input type="email" id="email"
+                                        class="bg-gray-600 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5"
+                                        placeholder="name@flowbite.com" required>
+                                </div>
+                                <div>
+                                    <label for="subject" class="block mb-2 text-lg">Subject</label>
+                                    <input type="text" id="subject"
+                                        class="block p-3 w-full text-sm text-gray-900 bg-gray-600 rounded-lg focus:ring-primary-500 focus:border-primary-500"
+                                        placeholder="Let us know how we can help you" required>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <label for="message" class="block mb-2 text-lg">Your message</label>
+                                    <textarea id="message" rows="6"
+                                        class="block p-2.5 w-full text-sm text-gray-900 bg-gray-600 rounded-lg focus:ring-primary-500 focus:border-primary-500"
+                                        placeholder="Leave a comment..."></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Send message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-base-200 text-base-content">
+        <div>
+            <a class="btn btn-ghost object-scale-down w-20 place-items-center mr-5">
+                <img src="../public/images/logo_black.png" class="filter invert" alt="">
+            </a>
+            <p>hansen Developement<br />Jump-starting ideas since 1998.</p>
+        </div>
+        <div>
+            <span class="footer-title">Informatio</span>
+            <a class="link link-hover">Home</a>
+            <a class="link link-hover">Who am I?</a>
+            <a class="link link-hover">My projects</a>
+            <a class="link link-hover">Contact</a>
+        </div>
+        <div>
+            <span class="footer-title">Additional links</span>
+            <a class="link link-hover">Project library</a>
+            <a class="link link-hover">My resume</a>
+        </div>
+        <div>
+            <span class="footer-title">Contact</span>
+            <a class="link link-hover">E-mail</a>
+            <a class="link link-hover">GitHub</a>
+            <a class="link link-hover">LinkedIn</a>
+        </div>
+    </footer>
+    <a class="btn btn-active btn-neutral btn-circle text-3xl fixed bottom-10 right-10" id="top-button" href="#top">^</a>
+</body>
+
+</html>
